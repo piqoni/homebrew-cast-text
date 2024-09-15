@@ -5,20 +5,20 @@
 class CastText < Formula
   desc "a zero latency, easy-to-use full-text rss terminal reader."
   homepage "https://github.com/piqoni/cast-text"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/piqoni/cast-text/releases/download/v0.1.0/cast-text_Darwin_x86_64.tar.gz"
-      sha256 "e703e2363e2c06a0d2db57e3cd9d7ca016168e62b8e38a0972c81b54357eae14"
+      url "https://github.com/piqoni/cast-text/releases/download/v0.1.1/cast-text_Darwin_x86_64.tar.gz"
+      sha256 "eb9d38fb0d392723fa8e2f6a80c13c92c941b3ebfbba3dd08bbe3e9f49f98306"
 
       def install
         bin.install "cast-text"
       end
     end
     on_arm do
-      url "https://github.com/piqoni/cast-text/releases/download/v0.1.0/cast-text_Darwin_arm64.tar.gz"
-      sha256 "bba603f31c2ee94be87f1acf04a95a3d69944b4da230c1591071db00a84a694f"
+      url "https://github.com/piqoni/cast-text/releases/download/v0.1.1/cast-text_Darwin_arm64.tar.gz"
+      sha256 "f6bf642f18abaa6a7a4f60d0aaaa1ecbd98c6fb41f56a4aed4d3e9283a7d20dd"
 
       def install
         bin.install "cast-text"
@@ -29,8 +29,8 @@ class CastText < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/piqoni/cast-text/releases/download/v0.1.0/cast-text_Linux_x86_64.tar.gz"
-        sha256 "48201b660f359d2d310d5ed2affc372b9d6687310f6525e3ab27164a289aa50f"
+        url "https://github.com/piqoni/cast-text/releases/download/v0.1.1/cast-text_Linux_x86_64.tar.gz"
+        sha256 "898777cdff94315b1c93fb1a3579fe90ff3c1c29bb30a49099a0a1cc79b209ee"
 
         def install
           bin.install "cast-text"
@@ -39,8 +39,8 @@ class CastText < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/piqoni/cast-text/releases/download/v0.1.0/cast-text_Linux_arm64.tar.gz"
-        sha256 "9d8f700d1f1a11c1497ca47690dc473a18af573c8fc07873a611e1f7d90dca3d"
+        url "https://github.com/piqoni/cast-text/releases/download/v0.1.1/cast-text_Linux_arm64.tar.gz"
+        sha256 "a032cbfaf60d0028c552cba0813befd49dcd80a7dd7cc1889e105ed21f191e40"
 
         def install
           bin.install "cast-text"
